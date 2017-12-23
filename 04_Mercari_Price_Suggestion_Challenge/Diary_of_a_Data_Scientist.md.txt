@@ -1,0 +1,39 @@
+## Mercari Price Suggestion Challenge
+
+
+
+
+
+
+
+
+
+
+### Week 2(12/18 - 12/24):
+
+####Hypothesis 1:
+Since there are multiple categories in the dataset, I intend to use a Random Forest Regressor; by encoding the attributes - category_name and brand_name using a LabelEncoder.
+
+
+####Model & Accuracy:
+Model: RandomForestRegressor, max_depth=2, random_state=0; RMSLE: 0.7910
+Model: RandomForestRegressor, max_depth=5, random_state=0; RMSLE: 0.7511
+Model: RandomForestRegressor, max_depth=8, random_state=0; RMSLE: 0.7044
+Model: RandomForestRegressor, max_depth=11, random_state=0; RMSLE: 0.6289
+Model: RandomForestRegressor, max_depth=18, random_state=0; RMSLE: 0.6028
+Model: RandomForestRegressor, max_depth=22, random_state=0; RMSLE: 0.5954
+Model: RandomForestRegressor, max_depth=24, random_state=0; RMSLE: 0.5947
+
+
+####Result:
+Although this performed better on the training set, it performed worse on the public leaderboard.
+
+
+
+
+Clean the data - stop word removal - convert the words into vector - apply clustering algos and then cluster similar products together to then aid the prediction.
+
+
+
+
+
