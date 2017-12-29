@@ -16,3 +16,6 @@ import requests
 import datetime
 
 import missingno as msno
+
+# #Scikit Learn
+from sklearn.model_selection import train_test_split
