@@ -17,5 +17,5 @@ import datetime
 
 import missingno as msno
 
-# #Scikit Learn
 from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
