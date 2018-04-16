@@ -48,3 +48,6 @@ if not spark_home:
 
 sys.path.insert(0, os.path.join(spark_home, 'python'))
 sys.path.insert(0, os.path.join(spark_home, 'C:/Users/karti/Spark/spark-2.3.0-bin-hadoop2.7/python/lib/py4j-0.10.6-src.zip'))
+
+filename=os.path.join(spark_home, 'python/pyspark/shell.py')
+exec(compile(open(filename, "rb").read(), filename, 'exec'))
